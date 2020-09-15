@@ -1,0 +1,62 @@
+resnet structure:
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+'''============layer1================'''
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torchFewShot.models.resnet12.Add'>
+<class 'torch.nn.modules.activation.ReLU'>
+'''============layer2================'''
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torchFewShot.models.resnet12.Add'>
+<class 'torch.nn.modules.activation.ReLU'>
+'''============layer3================'''
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torchFewShot.models.resnet12.Add'>
+<class 'torch.nn.modules.activation.ReLU'>
+'''============layer4================'''
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.activation.ReLU'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torchFewShot.models.resnet12.Add'>
+<class 'torch.nn.modules.activation.ReLU'>
+
+CAM
+<class 'torch.nn.modules.conv.Conv2d'>
+<class 'torch.nn.modules.batchnorm.BatchNorm2d'>
+<class 'torch.nn.modules.conv.Conv2d'>
+
