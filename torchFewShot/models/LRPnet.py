@@ -48,7 +48,7 @@ def get_xtrain_idx(labels, index):
      labels = labels.cpu().numpy()
      # print(labels)
      return np.where(labels==index)
-#['/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n03775546/n0377554600000147.jpg', '/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n07613480/n0761348000001234.jpg', '/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n02116738/n0211673800000436.jpg'], ['/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n03544143/n0354414300000030.jpg', '/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n02110063/n0211006300001114.jpg', '/home/sunjiamei/work/fewshotlearning/miniImageNet/test/n02129165/n0212916500000463.jpg']
+
 if __name__ == '__main__':
     parser = argument_parser()
     args = parser.parse_args()
@@ -58,8 +58,8 @@ if __name__ == '__main__':
     torch.manual_seed(args.seed)
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     use_gpu = torch.cuda.is_available()
-    args.resume = '/home/sunjiamei/work/fewshotlearning/fewshot-CAN-master/result/miniImageNet/CAM/1-shot-seed1-resnet12-224/best_model.pth.tar'
-    with open('/home/sunjiamei/work/fewshotlearning/dataset/miniImagenet/class_to_readablelabel.json', 'r') as f:
+    args.resume = 'please define your model path'
+    with open('path to /class_to_readablelabel.json', 'r') as f:
         class_to_readable = json.load(f)
     sys.stdout = Logger(osp.join(args.save_dir, 'log_test.txt'))
     print("==========\nArgs:{}\n==========".format(args))
@@ -140,7 +140,7 @@ if __name__ == '__main__':
             preds, preds_index = torch.max(logits,dim=-1)
             '''relevance backpropagate'''
 
-            save_folder = '/home/sunjiamei/work/fewshotlearning/fewshot-CAN-master/result/miniImageNet/CAM/1-shot-seed1-resnet12-224/explain_heatmaps/{}shot_episode{}'.format(args.nExemplars,batch_idx)
+            save_folder = 'your save folder/explain_heatmaps/{}shot_episode{}'.format(args.nExemplars,batch_idx)
             if not os.path.isdir(save_folder):
                 os.makedirs(save_folder)
             for cls in range(args.nKnovel):
